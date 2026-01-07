@@ -1,10 +1,10 @@
-# (ANCE) Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval
+# Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval
 
 Created: 2025년 10월 4일 오전 12:00
 
 # 한줄요약
 
-ANCE : retriever의 한 종류. 근데 negative를 뽑을 때 in-batch에서 뽑는 게 아니라 global에서 ANN으로 꽤나 유사도가 높은 것들 위주로 hard negative를 샘플링함. 이때 trainer랑 inferencer를 병렬적으로 둬서 특정 시점마다 ANN 인덱스 갱신. BM25나 DPR 보다 성능이 좋았음. 정확도는 ColBERT가 더 높고 빠른 건 ANCE.
+ANCE : retriever의 한 종류. 그런데 negative를 뽑을 때 in-batch에서 뽑는 게 아니라 global에서 ANN으로 꽤나 유사도가 높은 것들 위주로 hard negative를 샘플링함. 이때 trainer랑 inferencer를 병렬적으로 둬서 특정 시점마다 ANN 인덱스 갱신. BM25나 DPR 보다 성능이 좋았음. 정확도는 ColBERT가 더 높고 빠른 건 ANCE.
 
 ANCE에서 사용된 hard negative 샘플링 아이디어를 ColBERT 등 기타 모델에도 적용 가능할듯.
 
