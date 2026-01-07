@@ -1,4 +1,4 @@
-# Dense Passage Retrieval for Open-Domain Question Answering (DPR, 2020)
+# Dense Passage Retrieval for Open-Domain Question Answering
 
 Created: 2025년 10월 2일 오전 10:32
 
@@ -74,7 +74,12 @@ run-time에서 질문 q가 주어지면, question encoder E_Q를 통해 임베�
 
 목표: 더 나은 embedding function을 학습하여, 관련 있는 question-passage 쌍은 거리가 가깝게, 관련 없는 쌍은 멀게 만드는 벡터 공간을 구축하는 것.
 
-학습데이터 $D = \left\{ \langle q_i, p_i^{+}, p_{i,1}^{-}, \dots, p_{i,n}^{-} \rangle \right\}_{i=1}^m$
+학습데이터 
+$$D=
+\{
+\langle q_i, p_i^{+}, p_{i,1}^{-}, \dots, p_{i,n}^{-} \rangle
+\}_{i=1}^m
+$$
 
 q_i : 질문
 
