@@ -214,6 +214,6 @@ sparse retrieval : PyTorch의 Sparse Matrix 곱셈 연산으로 수행.
 
 ![image.png](image%2011.png)
 
-→ 성능 좋더라~
+→ 성능 good
 
 이밖에 out-domain zero-shot 성능도 좋았음.
